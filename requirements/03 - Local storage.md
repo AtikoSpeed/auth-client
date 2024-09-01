@@ -32,7 +32,7 @@ fetch('http://localhost:4000/user-profile/1', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
-        'jwtToken': localStorage.getItem("jwtToken"),
+        'Authorization': localStorage.getItem("jwtToken"),
     }
 })
 ```
